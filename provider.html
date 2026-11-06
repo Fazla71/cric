@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff0015">
+<title>Provider – Proximity Stream TV</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+  <section class="hero">
+    <div class="container">
+      <a href="index.html#live-events" class="muted"><i class="fa-solid fa-arrow-left"></i> Live Events</a>
+      <h1 id="pName" style="margin-top:12px">Provider</h1>
+      <p id="pDesc"></p>
+      <div class="hero-stats">
+        <div class="stat"><span class="dot"></span><b id="statLive">–</b> Live now</div>
+        <div class="stat"><i class="fa-regular fa-clock"></i><b id="statUp">–</b> Upcoming</div>
+        <div class="stat"><i class="fa-solid fa-list"></i><b id="statAll">–</b> Events</div>
+      </div>
+      <div class="filters provider-switch" id="providerSwitch" style="margin-top:20px"></div>
+    </div>
+  </section>
+  <section class="section" id="events">
+    <div class="container">
+      <div class="section-head">
+        <h2>Events</h2>
+        <div class="tools">
+          <div class="search-wrap"><i class="fa-solid fa-magnifying-glass"></i>
+            <input id="searchInput" class="search-input" type="search" placeholder="Search team, league…" aria-label="Search events"></div>
+        </div>
+      </div>
+      <div class="filters" id="statusFilters"></div>
+      <div class="filters" id="catFilters"></div>
+      <div class="events-grid" id="eventsGrid"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/provider.js"></script>
+</body>
+</html>

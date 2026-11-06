@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff0015">
+<meta name="referrer" content="no-referrer">
+<title>Watch Live – Proximity Stream TV</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@4.12.6/dist/controls.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+
+<main>
+  <!-- Player area (durbinlive style: full-width black base, 16:9) -->
+  <div class="video-player-base">
+    <div class="player-wrap">
+      <div class="player-box" id="playerBox">
+        <div class="live-pill" id="livePill"></div>
+        <div class="player-logo"><i class="fa-solid fa-tower-broadcast"></i><span id="logoText">LIVE</span></div>
+        <div data-shaka-player-container id="videoContainer" data-shaka-player-cast-receiver-id="07AEE832">
+          <video data-shaka-player id="video" playsinline webkit-playsinline autoplay></video>
+        </div>
+        <div class="player-overlay" id="overlay">
+          <div class="msg"><div class="spinner"></div><h4>Loading…</h4></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="video-post-info">
+      <h2 id="evTitle">Loading event…</h2>
+      <div class="vp-meta" id="evMeta"></div>
+      <ul class="actor-video-link" id="evTags"></ul>
+    </div>
+
+    <div class="section-head" style="margin-top:14px"><h3>Servers</h3><span class="muted" id="srvCount"></span></div>
+    <div class="servers" id="servers"></div>
+    <div class="notice" id="notice" hidden></div>
+
+    <div class="share-row">
+      <button class="btn ghost" id="btnReload"><i class="fa-solid fa-rotate-right"></i> Reload</button>
+      <button class="btn ghost" id="btnShare"><i class="fa-solid fa-share-nodes"></i> Share</button>
+      <a class="btn ghost" id="btnBack" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    </div>
+
+    <div id="matchBoard"></div>
+
+    <div class="tabs"><span>Description</span></div>
+    <div class="desc" id="evDesc"></div>
+
+    <section class="section" id="relatedSec">
+      <div class="section-head"><h3>You May Also Like</h3></div>
+      <div class="events-grid" id="related"></div>
+    </section>
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/mux.js@6.3.0/dist/mux.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/shaka-player@4.12.6/dist/shaka-player.ui.js"></script>
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/player.js"></script>
+</body>
+</html>

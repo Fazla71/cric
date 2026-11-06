@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff0015">
+<title>Proximity Stream TV – Live Events & Sports</title>
+<meta name="description" content="Watch live sports events and TV channels online – HLS (m3u8) & DASH (mpd) with DRM support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Watch <span>Live Events</span> &amp; Sports<br>Anytime, Anywhere</h1>
+      <p>Football, cricket, motorsport and more – streamed in HD with multiple servers. Pick a provider below to browse its live and upcoming events.</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="dot"></span><b id="statLive">–</b> Live now</div>
+        <div class="stat"><i class="fa-regular fa-clock"></i><b id="statUp">–</b> Upcoming</div>
+        <div class="stat"><i class="fa-solid fa-server"></i><b id="statProv">–</b> Providers</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="live-events">
+    <div class="container">
+      <div class="section-head">
+        <h2>Live Events</h2>
+        <span class="muted">Choose a provider</span>
+      </div>
+      <div class="providers-grid big" id="providersGrid"></div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
